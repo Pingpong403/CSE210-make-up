@@ -1,6 +1,7 @@
+from random import randint
 class Deck:
     def __init__(self):
-        self.__cards = []
+        pass
     
     def draw(self):
-        pass
+        return randint(1, 13)
