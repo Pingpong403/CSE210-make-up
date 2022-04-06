@@ -1,0 +1,15 @@
+Hello
+Computers
+Python
+Logic
+BYUI
+Manley
+Apple
+Pear
+Orange
+Grape
+Plum
+Nectarine
+Tangerine
+Watermelon
+Banana
