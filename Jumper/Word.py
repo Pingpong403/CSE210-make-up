@@ -33,7 +33,7 @@ class Word:
 
     def get_clue(self):
         # Return the decyphered word
-        return ''.join(self._clue)
+        return ' '.join(self._clue)
 
     def is_match(self):
         # returns whether the clue matches the word or not

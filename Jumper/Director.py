@@ -25,7 +25,9 @@ class Director:
             self._display.print_game(clue, graphic)
             # If out of lives, game over
             if self._jumper.is_alive():
-                pass
+                if not "_" in clue:
+                    print("Winner!")
+                    break
             else:
                 break
 
