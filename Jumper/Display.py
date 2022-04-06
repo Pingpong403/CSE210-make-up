@@ -4,4 +4,8 @@ class Display:
 
     def print_game(self, clue, jumper):
         # Print the current game state, including the ground
-        pass
+        print(f"{clue}\n")
+        print(f"{jumper}\n")
+    
+    def _print_ground(self):
+        print("^^ ^^ ^ ^")
