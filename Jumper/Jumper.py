@@ -5,20 +5,24 @@ class Jumper:
 
     def _create_graphic(self):
         # Load a new jumper into _graphic based on health
-        pass
-
-    def _delete_line(self):
-        # Delete the top line of the jumper
-        pass
+        full_graphic = [" ___", "/___\\", "\   /", " \ /", "  O", " /|\\", " / \\"]
+        dead_graphic = ["  x", " /|\\", " / \\"]
+        if self._health >= 3:
+            for _ in range(self._health + 1):
+                self._graphic.append(full_graphic[-1])
+        else:
+            for _ in range(3):
+                self._graphic.append(dead_graphic[-1])
 
     def lose_health(self):
-        # decreasing the jumpers health
-        pass
+        # Decrease the jumpers health
+        self._health -= 1
+        self._create_graphic()
 
     def get_graphic(self):
         # Return the current graphic as a string
-        pass
+        return "\n".join(self._graphic)
 
     def is_alive(self):
         # returns alive state of jumper
-        return self._health != 0
+        return self._health != 2
